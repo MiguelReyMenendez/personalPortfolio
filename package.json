@@ -10,6 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.8.3"
+    "@astrojs/tailwind": "^4.0.0",
+    "astro": "^2.8.3",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-fluid-type": "^2.0.3"
   }
 }
