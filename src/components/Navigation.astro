@@ -1,17 +1,13 @@
 ---
-interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
 ---
-<header>
     <nav class="w-full">
-        <div class="flex justify-between w-full px-16 py-8">
+        <div class="flex justify-between items-center w-full px-16 py-8">
             <!-- Left Nav -->
-            <div>
+            <div class="flex items-center justify-start gap-8">
+                <h1 class="fluid-text-xl font-semibold">&lt;<span class="text-gradient">MiguelRey</span> /&gt;</h1>
+
                 <ul
-                    class="flex flex-col text-left md:flex-row space-y-5 md:space-y-0 md:space-x-6 text-xl md:text-2xl">
+                    class="flex flex-col text-left md:flex-row space-y-5 md:space-y-0 md:space-x-6 fluid-text-xl">
                     <li class="text-left">
                         <a href="#experience">
                             Experience
@@ -31,7 +27,7 @@ const { title } = Astro.props;
                 <!-- Socials -->
                 <ul class="flex flex-col md:flex-row items-end md:items-center md:space-x-4 space-y-4 md:space-y-0">
                     <li>
-                        <a href="https://www.github.com" target="_blank" aria-label="Github"
+                        <a href="https://github.com/MiguelReyMenendez" target="_blank" aria-label="Github"
                             class="hover:text-blue-600">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9" fill="currentColor"
                                 class="bi bi-github" viewBox="0 0 16 16">
@@ -42,7 +38,7 @@ const { title } = Astro.props;
                     </li>
 
                     <li>
-                        <a href="https://www.linkedin.com" target="_blank" aria-label="linkedin"
+                        <a href="https://www.linkedin.com/in/reymiguel/" target="_blank" aria-label="linkedin"
                             class="hover:text-blue-600">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 rounded-full" fill="currentColor"
                                 class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -55,4 +51,3 @@ const { title } = Astro.props;
             </div>
         </div>
     </nav>
-</header>
