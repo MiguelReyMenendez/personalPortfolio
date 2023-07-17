@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  darkMode: 'class',
 	theme: {
 		extend: {
             fontFamiliy: {
@@ -8,6 +9,7 @@ module.exports = {
             },
             animation: {
                 text: 'text 5s ease infinite',
+                blink: 'blink 1s step-end infinite',
               },
               keyframes: {
                 text: {
@@ -20,6 +22,14 @@ module.exports = {
                     'background-position': 'right center',
                   },
                 },
+                blink: {
+                  '0%, 100%': {
+                    'opacity': '1.0'
+                  },
+                  '50%': {
+                    'opacity': '0.0'
+                  }
+                }
             },
         },
 	},
